@@ -11,11 +11,13 @@ const Footer = () => {
           <Link to="/">
             <GoTriangleUp className="footer-icon" />
           </Link>
+          <label for='gh-link'>Github</label>
           <a
             className="github-link"
             href="https://github.com/luke-h1/meal-app-react"
             target="_blank"
             rel="noreferrer"
+            name='gh-link'
           >
             <FaGithub className="footer-icon-gh" />
           </a>

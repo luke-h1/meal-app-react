@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState } from 'react';
 import { GoBeaker } from 'react-icons/go';
 import './Search.scss';
 import MealItem from '../MealItem/MealItem';
@@ -53,7 +53,13 @@ const Search = () => {
       <div className="search-container">
         <h2>Search for meals</h2>
         <GoBeaker className="search-icon" />
-        <input type="text" className="search-input" onChange={onChange} />
+        <label for="search">Search</label>
+        <input
+          type="text"
+          className="search-input"
+          onChange={onChange}
+          name="search"
+        />
         <input
           type="submit"
           className="button"
