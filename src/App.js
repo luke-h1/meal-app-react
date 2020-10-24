@@ -9,7 +9,7 @@ function App() {
     <Fragment>
       <BrowserRouter>
         <Header />
-        <Switch></Switch>
+        <Switch>{/* <Route path="/about" exact component={About} /> */}</Switch>
         <Search />
         <Footer />
       </BrowserRouter>

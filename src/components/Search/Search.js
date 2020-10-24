@@ -44,6 +44,10 @@ const Search = () => {
     }
   };
 
+  const clear = () => { 
+    window.location.reload()
+  }
+
   return (
     <Fragment>
       <div className="search-container">
@@ -56,6 +60,13 @@ const Search = () => {
           placeholder="submit"
           onClick={handleClick}
         />
+        <button
+          type="submit"
+          className="button-clear"
+          onClick={clear}
+        >
+          Clear Results
+        </button>
         {error}
       </div>
       <div className="grid-container">{meal}</div>
