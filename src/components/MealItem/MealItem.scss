@@ -1,19 +1,29 @@
 .meal-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .card {
-  max-width: 400px;
-  max-height: 400px;
+  background-color: #cdd7d6;
+  color: #000;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 300px;
+  max-height: 300px;
+  min-width: 300px;
+  min-height: 300px;
+
   text-align: center;
-  .img {
-    max-width: 250px;
-    max-height: 200px;
+  img {
+    max-width: 150px;
+    max-height: 150px;
   }
 }
 .description {
-  text-align: center;
+  width: 50%;
   margin: 0 auto;
+  text-align: center;
+  text-wrap: wrap;
 }

@@ -1,22 +1,18 @@
-import React, { Fragment } from 'react';
-import './MealItem.scss';
+import React, { Fragment } from "react";
+import "./MealItem.scss";
 
-const MealItem = () => { 
-  return ( 
+const MealItem = (props) => {
+  return (
     <Fragment>
       <div className="meal-container">
         <div className="card">
-          <img src="" alt=""/>
+          <img src={props.meal.strMealThumb} alt="" />
           <div className="description">
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
-
+            <p>{props.meal.strMeal}</p>
           </div>
         </div>
       </div>
     </Fragment>
-  )
-}
+  );
+};
 export default MealItem;
