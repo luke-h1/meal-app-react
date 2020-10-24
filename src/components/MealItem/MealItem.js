@@ -5,11 +5,23 @@ const MealItem = (props) => {
     <Fragment>
       <div className="meal-container">
         <div className="card">
-          <img src={props.meal.strMealThumb} alt="" />
+          <div className="img-container">
+            <img
+              src={props.meal.strMealThumb}
+              alt=""
+              className="img"
+              loading="lazy"
+            />
+          </div>
           <div className="description">
             <p>{props.meal.strMeal}</p>
             <div className="instructions">
-              <a href={props.meal.strYoutube} className="recipe">
+              <a
+                href={props.meal.strYoutube}
+                className="recipe"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Get the recipe
               </a>
             </div>
