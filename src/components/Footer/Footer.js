@@ -1,8 +1,8 @@
-import React, { Fragment } from "react";
-import "./Footer.scss";
-import { Link } from "react-router-dom";
-import { GoTriangleUp } from "react-icons/go";
-import { FaGithub } from "react-icons/fa";
+import React, { Fragment } from 'react';
+import './Footer.scss';
+import { Link } from 'react-router-dom';
+import { GoTriangleUp } from 'react-icons/go';
+import { FaGithub } from 'react-icons/fa';
 const Footer = () => {
   return (
     <Fragment>

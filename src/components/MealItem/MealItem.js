@@ -1,5 +1,5 @@
-import React, { Fragment } from "react";
-import "./MealItem.scss";
+import React, { Fragment } from 'react';
+import './MealItem.scss';
 const MealItem = (props) => {
   return (
     <Fragment>
@@ -9,7 +9,9 @@ const MealItem = (props) => {
           <div className="description">
             <p>{props.meal.strMeal}</p>
             <div className="instructions">
-              <a href={props.meal.strYoutube} className='recipe'>Get the recipe</a>
+              <a href={props.meal.strYoutube} className="recipe">
+                Get the recipe
+              </a>
             </div>
           </div>
         </div>

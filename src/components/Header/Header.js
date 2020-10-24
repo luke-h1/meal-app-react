@@ -1,7 +1,7 @@
-import React, { Fragment } from "react";
-import PropTypes from "prop-types";
-import { GiFoodTruck } from "react-icons/gi";
-import "./Header.scss";
+import React, { Fragment } from 'react';
+import PropTypes from 'prop-types';
+import { GiFoodTruck } from 'react-icons/gi';
+import './Header.scss';
 const Header = ({ title }) => {
   return (
     <Fragment>
@@ -14,7 +14,7 @@ const Header = ({ title }) => {
 };
 
 Header.defaultProps = {
-  title: "Meal Recipe App",
+  title: 'Meal Recipe App',
 };
 
 Header.propTypes = {

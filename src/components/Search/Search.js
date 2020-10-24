@@ -1,16 +1,16 @@
-import React, { Fragment, useState, useEffect } from "react";
-import { GoBeaker } from "react-icons/go";
-import "./Search.scss";
-import MealItem from "../MealItem/MealItem";
+import React, { Fragment, useState, useEffect } from 'react';
+import { GoBeaker } from 'react-icons/go';
+import './Search.scss';
+import MealItem from '../MealItem/MealItem';
 const Search = () => {
-  const [meal, setMeal] = useState("");
-  const [error, setError] = useState("");
-  const [text, setText] = useState("");
+  const [meal, setMeal] = useState('');
+  const [error, setError] = useState('');
+  const [text, setText] = useState('');
 
   const showError = (msg) => {
     setError(msg);
     setTimeout(() => {
-      setError("");
+      setError('');
     }, 2000);
   };
 
@@ -28,7 +28,7 @@ const Search = () => {
       console.log(e);
       showError(
         <h2 className="error">
-          No meals found from the API. Try another recipe{" "}
+          No meals found from the API. Try another recipe{' '}
         </h2>
       );
     }
@@ -37,7 +37,7 @@ const Search = () => {
   const onChange = (e) => setText(e.target.value);
 
   const handleClick = () => {
-    if (text === "") {
+    if (text === '') {
       showError(<h2 className="error">Enter a correct query</h2>);
     } else if (text.trim()) {
       searchMeals(text);
@@ -63,4 +63,3 @@ const Search = () => {
   );
 };
 export default Search;
-
