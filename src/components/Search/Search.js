@@ -15,17 +15,24 @@ const Search = () => {
   };
 
   const searchMeals = async () => {
-    const BASE_URL = `https://www.themealdb.com/api/json/v1/1/search.php?s=`;
-    const res = await fetch(`${BASE_URL}${text}`);
-    const data = await res.json();
-    console.log(data);
-    const results = data.meals.map((meal) => {
-      return <MealItem meal={meal} key={meal.idMeal}/>;
-    });
-    setMeal(results);
+    try {
+      const BASE_URL = `https://www.themealdb.com/api/json/v1/1/search.php?s=`;
+      const res = await fetch(`${BASE_URL}${text}`);
+      const data = await res.json();
+      console.log(data);
+      const results = data.meals.map((meal) => {
+        return <MealItem meal={meal} key={meal.idMeal} />;
+      });
+      setMeal(results);
+    } catch (e) {
+      console.log(e);
+      showError(
+        <h2 className="error">
+          No meals found from the API. Try another recipe{" "}
+        </h2>
+      );
+    }
   };
-
-
 
   const onChange = (e) => setText(e.target.value);
 
@@ -51,10 +58,8 @@ const Search = () => {
           onClick={handleClick}
         />
         {error}
-      </div> 
-      <div className="grid-container">
-      {meal}
       </div>
+      <div className="grid-container">{meal}</div>
     </Fragment>
   );
 };

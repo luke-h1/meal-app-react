@@ -42,8 +42,12 @@
   }
 }
 
-
-.grid-container { 
+.grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+}
+
+.error {
+  margin-top: 2rem;
+  color: red;
 }
