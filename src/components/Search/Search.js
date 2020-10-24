@@ -44,9 +44,9 @@ const Search = () => {
     }
   };
 
-  const clear = () => { 
-    window.location.reload()
-  }
+  const clear = () => {
+    window.location.reload();
+  };
 
   return (
     <Fragment>
@@ -60,11 +60,7 @@ const Search = () => {
           placeholder="submit"
           onClick={handleClick}
         />
-        <button
-          type="submit"
-          className="button-clear"
-          onClick={clear}
-        >
+        <button type="submit" className="button-clear" onClick={clear}>
           Clear Results
         </button>
         {error}
