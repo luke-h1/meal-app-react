@@ -30,8 +30,8 @@ const searchMeals = async () => {
     if (text === ''){
     showError(<h2 className='error'>Enter a correct query
     </h2>)
-    }else { 
-      console.log(text);
+    }else if (text.trim()){ 
+ 
       searchMeals(text); 
     }
   }
