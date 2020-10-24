@@ -16,14 +16,23 @@ const showError = (msg) => {
   }, 2000)
 }
 
+const searchMeals = async () => { 
+  const BASE_URL = `https://www.themealdb.com/api/json/v1/1/search.php?s=`
+  const res = await fetch(`${BASE_URL}${text}`)
+  const data = await res.json();
+  console.log(data);
+}
+
 
   const onChange = (e) => setText(e.target.value);
 
   const handleClick = () => { 
     if (text === ''){
-      showError('enter text')
+    showError(<h2 className='error'>Enter a correct query
+    </h2>)
     }else { 
-      // do the function
+      console.log(text);
+      searchMeals(text); 
     }
   }
 
