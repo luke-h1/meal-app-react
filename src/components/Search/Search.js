@@ -65,4 +65,3 @@ const Search = () => {
 };
 export default Search;
 
-// https://www.themealdb.com/api/json/v1/1/search.php?s=Arrabiata

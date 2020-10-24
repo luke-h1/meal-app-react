@@ -8,11 +8,12 @@ function App() {
   return (
     <Fragment>
       <BrowserRouter>
+        <Header />
         <Switch>
-          <Route path='/' exact component={Header} />
+          <Route path="/" exact component={Header} />
         </Switch>
         <Search />
-        <Footer /> 
+        <Footer />
       </BrowserRouter>
     </Fragment>
   );
