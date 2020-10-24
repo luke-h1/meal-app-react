@@ -48,7 +48,6 @@ const Search = () => {
     <Fragment>
       <div className="search-container">
         <h2>Search for meals</h2>
-
         <GoBeaker className="search-icon" />
         <input type="text" className="search-input" onChange={onChange} />
         <input

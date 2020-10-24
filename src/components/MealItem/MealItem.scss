@@ -10,7 +10,6 @@
   color: #000;
   padding: 1rem;
   margin: 1rem 0 1rem 0;
-
   border-radius: 8px;
   max-width: 300px;
   max-height: 300px;
@@ -27,5 +26,15 @@
   width: 50%;
   margin: 0 auto;
   text-align: center;
-  text-wrap: wrap;
+}
+
+
+.instructions { 
+  width: 100%;
+  text-align: center;
+}
+
+.recipe { 
+  text-align: center;
+  font-size: 25px;
 }

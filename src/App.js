@@ -10,7 +10,6 @@ function App() {
       <BrowserRouter>
         <Header />
         <Switch>
-          <Route path="/" exact component={Header} />
         </Switch>
         <Search />
         <Footer />
