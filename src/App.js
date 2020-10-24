@@ -1,10 +1,19 @@
-import React, {Fragment} from 'react';
-import './App.scss';
-import Header from './components/Header/Header';
+import React, { Fragment } from "react";
+import "./App.scss";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import Header from "./components/Header/Header";
+import Search from "./components/Search/Search";
+import Footer from "./components/Footer/Footer";
 function App() {
   return (
     <Fragment>
-     <Header /> 
+      <BrowserRouter>
+        <Switch>
+          <Route path='/' exact component={Header} />
+        </Switch>
+        <Search />
+        <Footer /> 
+      </BrowserRouter>
     </Fragment>
   );
 }

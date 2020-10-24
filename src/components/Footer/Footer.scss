@@ -1,0 +1,21 @@
+.footer-container {
+  background-color: #3a3335;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-width: 100vw;
+}
+
+.footer-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  color: #fff;
+}
+
+.footer-icon {
+  color: #fff;
+  font-size: 35px;
+}
