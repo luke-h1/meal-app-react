@@ -13,6 +13,12 @@ const Header = ({ title }) => {
         <Link to="/" className="react-link">
           <GiFoodTruck className="icon" />
         </Link>
+        <div className="about">
+        <Link to='/about' className='react-link-about'>
+          About 
+        </Link>
+
+        </div>
       </header>
     </Fragment>
   );
