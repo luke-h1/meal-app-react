@@ -14,10 +14,9 @@ const Header = ({ title }) => {
           <GiFoodTruck className="icon" />
         </Link>
         <div className="about">
-        <Link to='/about' className='react-link-about'>
-          About 
-        </Link>
-
+          <Link to="/about" className="react-link-about">
+            About
+          </Link>
         </div>
       </header>
     </Fragment>

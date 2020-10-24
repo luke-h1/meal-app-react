@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import './App.scss';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Home from './pages/Home/Home';
-import About from './pages/About/About'
+import About from './pages/About/About';
 function App() {
   return (
     <Fragment>

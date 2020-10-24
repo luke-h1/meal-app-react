@@ -5,9 +5,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 10vh;
+  min-height: 15vh;
   min-width: 100vw;
   position: sticky;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  height: 4rem;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
 }
 
 .footer-wrap {
