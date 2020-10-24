@@ -1,0 +1,19 @@
+.meal-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.card {
+  max-width: 400px;
+  max-height: 400px;
+  text-align: center;
+  .img {
+    max-width: 250px;
+    max-height: 200px;
+  }
+}
+.description {
+  text-align: center;
+  margin: 0 auto;
+}
